@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width-device=width, initial-scale=1.0">
+<head>
+<title>Ejercicio 18</title>
+</head>
+
+<body>
+
+<body>
+<br>
+<br>
+<br>
+<table>
+
+    Introduzca N:
+    <input id="num" type="text">&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="clickear()">sumar con sus antepasados !</button>
+
+</table>
+
+
+<script>
+
+var inputfocused = "";
+
+fin=0;
+
+function clear(){
+    document.getElementById("clearbutton").onclick = limpiaCampo;
+    activo.innerHTML = "";
+}
+
+
+function clickear() {
+
+    var numero1 = document.getElementById("num").value;
+    for (var i = 1; i <= numero1; i++) {
+            fin = fin+i;
+    }
+
+    var resultado = parseFloat(fin);
+
+    console.log(resultado);
+    alert("la suma de los primeros "+numero1+" numeros es: "+resultado);
+    }
+
+</script>
+</body>
+</body>
+</html>

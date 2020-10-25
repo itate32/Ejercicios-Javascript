@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 22</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div aligh="center"><h1>Ejercicio 22</h1></div>
+        <br>
+        <p>No se pueden seleccionar las casillas verdes<br>
+        Sólo se pueden seleccionar casillas ubicadas sobre, bajo o la derecha de la casilla actual<br>
+        El juego finaliza cuando llegue a la casilla "FIN"</p>
+            <br>
+            <br>
+            <br>
+        <table id="table" cellspacing="3">
+            <tr>
+                <td id="1" class="static">Inicio</td>
+                <td id="2" class="motion" onclick="valida('2')">on</td>
+                <td id="3" class="motion" onclick="valida('3')"></td>
+                <td id="4" class="motion" onclick="valida('4')"></td>
+                <td id="5" class="motion" onclick="valida('5')"></td>
+            </tr>
+            <tr>
+                <td id="6" class="motion" onclick="valida('6')">on</td>
+                <td id="7" class="motion" onclick="valida('7')"></td>
+                <td id="8" class="motion" onclick="valida('8')"></td>
+                <td id="9" class="motion" onclick="valida('9')"></td>
+                <td id="10" class="motion" onclick="valida('10')"></td>
+            </tr>
+            <tr>
+                <td id="11" class="motion" onclick="valida('11')"></td>
+                <td id="12" class="motion" onclick="valida('12')"></td>
+                <td id="13" class="motion" onclick="valida('13')"></td>
+                <td id="14" class="motion" onclick="valida('14')"></td>
+                <td id="15" class="motion" onclick="valida('15')"></td>
+            </tr>
+            <tr>
+                <td id="16" class="motion" onclick="valida('16')"></td>
+                <td id="17" class="motion" onclick="valida('17')"></td>
+                <td id="18" class="motion" onclick="valida('18')"></td>
+                <td id="19" class="motion" onclick="valida('19')"></td>
+                <td id="20" class="motion" onclick="valida('20')"></td>
+            </tr>
+            <tr>
+                <td id="21" class="motion" onclick="valida('21')"></td>
+                <td id="22" class="motion" onclick="valida('22')"></td>
+                <td id="23" class="motion" onclick="valida('23')"></td>
+                <td id="24" class="motion" onclick="valida('24')"></td>
+                <td id="25" class="static" onclick="fin()">Fin</td>
+            </tr>
+        </table>
+    </div>
+   <script src="script.js"></script>
+   
+</body>
+</html>

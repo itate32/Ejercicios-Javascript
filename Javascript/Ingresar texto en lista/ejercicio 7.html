@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <title>ejercicio 23</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet" />
+    <script src="js/mijs.js"></script>
+
+   
+
+</head>
+
+<body>
+
+    <div id="principal">
+        <header><h1>EJERCICIO:23</h1></header>
+            <section id="izq">
+                <article id="caja1">
+                <ul class="b">
+                    <li>
+                        <h2 id="uno"></h2>
+                    </li>
+                </ul>
+                </article>
+            </section>
+
+
+            <section id="der">
+                <article id="caja2">
+
+                    <ol class="c">
+                        <li>
+                            <h2 id="dos"></h2>
+                        </li>
+                    </ol>
+
+
+                </article>
+
+            </section>
+
+
+
+        
+        <footer>
+
+            <form name="nombreform" id="idform" action="http://www.google.com">
+
+                <br>
+                <p class="formulario">INGRESE EL TEXTO PARA AGREGAR A LA LISTA</p>
+                <textarea id="campo" class="form-control" rows="4" placeholder="Ingrese su mensaje"></textarea>
+                <p class="formulario">SELECCIONE UNA LISTA</p>
+                <br>
+                <input type="radio" name="nombreradio" value="izquierda" /><span style="font-family: 'Lato', sans-serif; padding-left: 5px;font-weight: 900;">Lista Izquierda</span>
+                <br>
+                <input type="radio" name="nombreradio" value="derecha" /><span style="font-family: 'Lato', sans-serif; padding-left: 5px;font-weight: 900;">Lista Derecha</span>
+                <br>
+               
+                <input type="button" value="ENVIAR TEXTO" onclick="verradiovalue();" />
+
+            </form>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

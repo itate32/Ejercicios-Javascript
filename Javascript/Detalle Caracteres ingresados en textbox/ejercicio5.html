@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21</title>
+    
+    
+</head>
+<body>
+    <h1>Ejercicio 21</h1>
+    <div class="contenedor">
+            <textarea type="text" id="frase" name="frase" cols="30" rows="10">Ingresa un texto y cuando presiones el botón, te mostrará un descripción detallada de lo que escribiste</textarea><br>    
+            <input type="submit" value="Características del texto" onclick="leerFrase(frase)">
+            <p id="contenedor"></p>
+    </div>
+    
+    <script type="text/javascript">
+        function leerFrase(value){
+
+            var largoTexto = value.value;
+
+            var largo = largoTexto.replace( /\s/g, '' ).length;
+
+            var arrPalabras = largoTexto.split(" ");
+
+            numPalabras = arrPalabras.length;
+
+            var arrayAtras = arrPalabras.reverse();
+
+            var resultado= "La cantidad de letras del texto son: " + largo +'<br />'+  "Cantidad de palabras en el texto: " + numPalabras +'<br />'+ "La primera palabra escrita fue: " + (arrPalabras[arrPalabras.length-1]) +'<br />' + "La última palabra escrita fue: " + arrPalabras[0] +'<br />'+ "El texto al revés es: " + arrayAtras +'<br />';
+
+            document.getElementById("contenedor").innerHTML = resultado;
+
+        }
+    </script>
+    
+    
+</body>
+</html>

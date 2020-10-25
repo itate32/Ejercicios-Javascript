@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 27: FORMULARIO</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
+    <script src="elpulento.js"></script>
+
+
+</head>
+
+<body>
+
+    <section>
+
+        <form autocomplete>
+
+            <p class="formulario">Nombre:</p>
+            <input class="selector-css" name="nombre" type="text" id="nombre" placeholder="Ingresar Nombre" pattern="^[A-ZÀ-ža-z\s]+$"
+                minlength="5" maxlength="30" required>
+
+
+
+            <p class="formulario">Apellidos:</p>
+            <input class="selector-css"  name="apellidos" type="text" id="apellidos" placeholder="Ingresar Apellidos"
+                pattern="^[A-ZÀ-ža-z\s]+$" minlength="1" maxlength="50" required>
+
+
+            <p class="formulario">Fecha de Nacimiento:</p>
+            <input class="selector-css" type="date" name="user_date" id="user_date" required />
+
+
+            <p class="formulario">Teléfono:</p>
+            <input class="selector-css" name="telefono" type="text" value="" size="100" maxlength="100" placeholder="Teléfono"
+                pattern="[0-9]{7,12}">
+
+
+            <p class="formulario">Nivel Educacional</p>
+
+            <select class="select-css">
+                <option value="0">1° Básico</option>
+                <option value="1">2° Básico</option>
+                <option value="2">3° Básico</option>
+                <option value="3">4° Básico</option>
+                <option value="4">5° Básico</option>
+                <option value="5">6° Básico</option>
+                <option value="6">7° Básico</option>
+                <option value="7">8° Básico</option>
+                <option value="8">1° Medio</option>
+                <option value="9">2° Medio</option>
+                <option value="10">3° Medio</option>
+                <option value="11">4° Medio</option>
+
+            </select>
+
+
+            <p class="formulario">Direccion:</p>
+            <input class="selector-css" name="direccion" type="text" id="direccion" placeholder="Ingresar dirección" minlength="1"
+                maxlength="100" required>
+
+
+
+
+            <p class="formulario">Ciudad:</p>
+            <input class="selector-css" name="ciudad" type="text" id="ciudad" placeholder="Ingresar Ciudad" minlength="1" maxlength="30"
+                required>
+
+
+            <p class="formulario">Región</p>
+
+            <select class="select-css">
+                <option value="0">Aisén del G Carlos Ibáñez del Campo</option>
+                <option value="1">Antofagasta</option>
+                <option value="2">Arica y Parinacota</option>
+                <option value="3">Atacama</option>
+                <option value="4">Bio - Bio</option>
+                <option value="5">Coquimbo</option>
+                <option value="6">La Araucanía</option>
+                <option value="7">Libertador General Bernardo O'Higgins</option>
+                <option value="8">Los Lagos</option>
+                <option value="9">Los Rios</option>
+                <option value="10">Magallanes y de la Antártica Chilena</option>
+                <option value="11">Maule</option>
+                <option value="12">Metropolitana de Santiago</option>
+                <option value="13">Ñuble</option>
+                <option value="14">Tarapacá</option>
+                <option value="15">Valparaíso</option>
+            </select>
+            <p>
+            <div id="result"></div>
+            </p>
+            <br><br>
+            <input type="submit" value="Enviar" onclick="calcularEdad()">
+
+        </form>
+
+    </section>
+
+
+</body>
+
+</html>
